@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+section p{
+    width: 80%;
+}
+section a{
+    color: black;
+    font-size: 30px;
+}
+#section-red{
+    background-color: #b54343;
+}
+#section-blue{
+    background-color: #5580c6;
+}
+#section-green{
+    background-color: #548154;
+}

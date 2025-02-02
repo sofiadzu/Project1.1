@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-color: papayawhip;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .ball {
+            width: 70px;
+            height: 70px;
+            background-color: lightgrey;
+            border-radius: 50%;
+            position: absolute;
+            animation: moveAndTransform 5s ease-in-out infinite, colorAndOpacity 6s ease-in-out infinite;
+        }
+        @keyframes moveAndTransform {
+            0% {
+                transform: translateX(0) rotate(0deg) scale(1);
+            }
+            25% {
+                transform: translateX(300px) rotate(90deg) scale(1.2);
+            }
+            50% {
+                transform: translateX(600px) rotate(180deg) scale(0.8);
+            }
+            75% {
+                transform: translateX(300px) rotate(270deg) scale(1.2);
+            }
+            100% {
+                transform: translateX(0) rotate(360deg) scale(1);
+            }
+        }
+
+        @keyframes colorAndOpacity {
+            0% {
+                background-color: #3498db;
+                opacity: 1;
+            }
+            25% {
+                background-color: #e74c3c;
+                opacity: 0.8;
+            }
+            50% {
+                background-color: #2ecc71;
+                opacity: 0.6;
+            }
+            75% {
+                background-color: #f39c12;
+                opacity: 0.8;
+            }
+            100% {
+                background-color: #3498db;
+                opacity: 1;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="ball"></div>
+
+</body>
+</html>

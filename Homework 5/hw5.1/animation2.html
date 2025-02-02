@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: honeydew;
+            overflow: hidden;
+        }
+
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #b54343;
+            border-radius: 20%;
+            border-top: 10px solid midnightblue;
+            border-left: 10px solid midnightblue;
+            border-bottom: 10px solid midnightblue;
+            border-right: 10px solid midnightblue;
+            animation: moveRotateColor 6s infinite ease-in-out;
+        }
+
+        @keyframes moveRotateColor {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+                background-color: #9f6060;
+            }
+            25% {
+                transform: translate(200px, -200px) rotate(90deg);
+                background-color: #f3c87d;
+            }
+            50% {
+                transform: translate(400px, 0) rotate(180deg);
+                background-color: #a5eac2;
+            }
+            75% {
+                transform: translate(200px, 200px) rotate(270deg);
+                background-color: #95d4ef;
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+                background-color: #ff8778;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="square"></div>
+
+</body>
+</html>
